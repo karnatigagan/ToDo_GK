@@ -1,8 +1,7 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: <!-- TODO: --> Gagan Karnati
+- **Dot Number**: <!-- TODO:--> Karnati.12
 
 ## Assignment Overview
 
@@ -117,6 +116,10 @@ Below is further rationale/explanation for the rubric items above:
 <!-- TODO: briefly argue your choice of design or design something
 new; then delete this comment -->
 
+I selected the AI Task Scheduler component because it best demonstrates the use of kernel and secondary methods to build a layered software system. This design models real-world scheduling needs, such as prioritizing tasks by deadline and importance, which is both relatable and valuable to future employers.
+I considered real-world feasibility and feedback from the instructor, including the suggestion to implement a hasTask or removeAny method to make removeTask more reliable. I also adjusted my design to ensure that priority—being fundamental to task management—belongs in the kernel interface, not just the secondary methods.
+Given the complexity of scheduling logic, this component pushes me to apply core software engineering principles such as modularity, internal representations using a Task class, and possible use of enums for priority levels. It’s also expandable, allowing for features like sorting and schedule clearing later on. This makes it ideal as both a proof-of-concept and a foundational system to grow into the full OSU discipline.
+
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
 > preference is to use GitHub Desktop. From there, you can click the `Branch`
@@ -168,15 +171,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.04.15
 
 ### Added
 
-- Designed a proof of concept for <!-- insert name of component here --> component
+- Designed a proof of concept for To-Do List component
+
+### Updated
+
+- Chose To-Do List due to simplicity, feasibility, and ability to scale
+- Designed a proof of concept for <!-- to do list --> component
 
 ### Updated
 
 - Changed design to include ...
+- Chose To-Do List due to simplicity, feasibility, and ability to scale
+- Incorporated instructor feedback to move priority to kernel level
+- Added `hasTask()` to support reliable removal operations
 
 ```
 
