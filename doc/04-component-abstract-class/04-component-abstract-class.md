@@ -172,15 +172,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.04.15
 
 ### Added
 
-- Designed abstract class for <!-- insert name of component here --> component
+- Implemented abstract class AITaskSchedulerSecondary
+- Included secondary method adjustPriority (kernel-based)
+- Added toString and equals as common methods
 
 ### Updated
 
-- Changed design to include ...
+- Noted need for additional kernel accessors (e.g., getDeadline) to complete full logic
 
 ```
 
