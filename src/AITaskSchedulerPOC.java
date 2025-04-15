@@ -9,7 +9,7 @@ import java.util.List;
  * Proof-of-Concept for AI Task Scheduler Component. Prioritizes tasks based on
  * deadline and priority.
  */
-public class AITaskScheduler {
+public class AITaskSchedulerPOC {
 
     // Internal class to represent a Task
     private static class Task {
@@ -33,7 +33,7 @@ public class AITaskScheduler {
     // List to hold tasks
     private final List<Task> tasks;
 
-    public AITaskScheduler() {
+    public AITaskSchedulerPOC() {
         this.tasks = new ArrayList<>();
     }
 
@@ -87,7 +87,7 @@ public class AITaskScheduler {
 
     // Proof-of-Concept main method
     public static void main(String[] args) {
-        AITaskScheduler scheduler = new AITaskScheduler();
+        AITaskSchedulerPOC scheduler = new AITaskSchedulerPOC();
 
         // Sample deadlines
         Calendar cal = Calendar.getInstance();

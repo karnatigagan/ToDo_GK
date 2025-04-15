@@ -133,6 +133,17 @@ of it in this folder. You may also embed it just below using markdown syntax
 (i.e., `![ALT TEXT](path/to/file)`).
 
 <!-- TODO: make a diagram of your component hierarchy then delete this comment -->
+              <!-- ┌───────────────────────────────┐
+              │         Standard<T>           │
+              └────────────┬──────────────────┘
+                           │
+         ┌────────────────▼────────────────┐
+         │    AITaskSchedulerKernel        │
+         └────────────────┬────────────────┘
+                          │
+        ┌─────────────────▼──────────────────┐
+        │         AITaskScheduler            │
+        └────────────────────────────────────┘ -->
 
 To start making your interfaces, make a branch off of main in your new repo
 called something like `interfaces`. There are many ways to do this, but my
@@ -192,15 +203,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.04.15
 
 ### Added
 
-- Designed kernel and enhanced interfaces for <!-- insert name of component here --> component
+- Designed kernel and enhanced interfaces for AI Task Scheduler component
 
 ### Updated
 
-- Changed design to include ...
+- Refined method responsibilities between kernel and enhanced interfaces
+- Added `hasTask` kernel method for safe `removeTask` execution
 
 ```
 
